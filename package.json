@@ -8,7 +8,13 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "pnpm lint:eslint && pnpm lint:prettier",
+    "lint:eslint": "eslint --cache .",
+    "lint:prettier": "prettier --check --cache --plugin-search-dir=. .",
+    "format": "pnpm format:eslint && pnpm format:prettier",
+    "format:eslint": "eslint --cache --fix .",
+    "format:prettier": "prettier --write --cache --plugin-search-dir=. ."
   },
   "dependencies": {
     "@astrojs/image": "0.9.3",
@@ -26,6 +32,9 @@
     "@types/react": "18.0.21",
     "@typescript-eslint/parser": "5.39.0",
     "eslint": "8.25.0",
-    "eslint-plugin-astro": "0.20.0"
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-astro": "0.20.0",
+    "prettier": "2.7.1",
+    "prettier-plugin-astro": "0.5.5"
   }
 }

@@ -6,17 +6,17 @@ import { SharkFinIcon } from './icons/SharkFinIcon'
 import { ThemeToggle } from './ThemeToggleButton'
 ---
 
-<header class="fixed w-full p-2 z-20 backdrop-blur-md">
+<header class="fixed z-20 w-full p-2 backdrop-blur-md">
   <div class="mx-auto max-w-3xl">
     <nav class="flex items-center gap-3 text-base">
       <a href="/" class="group">
         <h2
-          class="flex items-center gap-2 font-semibold tracking-tighter p-2 font-mplus text-lg"
+          class="font-mplus flex items-center gap-2 p-2 text-lg font-semibold tracking-tighter"
         >
           <SharkFinIcon />Pandashark
         </h2>
       </a>
-      <div class="items-center gap-6 hidden md:flex">
+      <div class="hidden items-center gap-6 md:flex">
         <HeaderLink href={HOMEPAGE_URL}>About</HeaderLink>
         <HeaderLink href="https://twitter.com/pandashark6" target="_blank"
           >Twitter</HeaderLink

@@ -1,5 +1,5 @@
 {
-  "name": "pandashark-blog",
+  "name": "pandashark-uses",
   "type": "module",
   "version": "0.0.1",
   "private": true,
@@ -37,6 +37,7 @@
     "eslint-plugin-astro": "0.20.0",
     "eslint-plugin-tailwindcss": "3.6.2",
     "prettier": "2.7.1",
-    "prettier-plugin-astro": "0.5.5"
+    "prettier-plugin-astro": "0.5.5",
+    "rehype-add-classes": "1.0.0"
   }
 }

@@ -1,0 +1,18 @@
+---
+description: Electrical Kettle
+public: true
+layout: ../../layouts/BlogPost.astro
+title: Russell Hobbs Cafe Kettle
+createdAt: 2022-10-15T19:45:44+0900
+updatedAt: 2022-10-15T19:45:44+0900
+tags:
+  - Kitchenware
+heroImage: /posts/russell-hobbs-cafe-kettle.jpg
+slug: russell-hobbs-cafe-kettle
+---
+
+市販の電気ケトルは大径のものが多い中でこの電気ケトルは小径で扱いやすい。小径の電気ケトルは大径のそれの上位互換である。コーヒーを淹れるとき、加熱方法が電気に限らず口が大きいやかんの場合、注湯コントロールがしやすい細口のものに移しかえねばならないが、これは沸かしたらそのままコーヒーの抽出に使える。
+
+小さい鍋でパスタを茹でるときも重宝する。鍋にパスタをセットした後に上の部分からお湯を注ぐことですぐにパスタが柔らかくなるため、加熱ムラが生まれない。
+
+使っていくうちに底に白斑が出てくるが、水道水中のカルキ成分が析出したもの。クエン酸水（レモン汁でも）を沸かせば中和反応で消える。

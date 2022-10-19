@@ -4,6 +4,7 @@ import { HOMEPAGE_URL } from '../config'
 import { IoLogoGithub } from 'react-icons/io5'
 import { SharkFinIcon } from './icons/SharkFinIcon'
 import { ThemeToggle } from './ThemeToggleButton'
+import { DropdownMenu } from './DropdownMenu'
 ---
 
 <header class="fixed z-20 w-full p-2 backdrop-blur-md">
@@ -24,7 +25,8 @@ import { ThemeToggle } from './ThemeToggleButton'
         >
       </div>
       <div class="flex-1"></div>
-      <ThemeToggle client:load />
+      <ThemeToggle client:visible />
+      <DropdownMenu client:visible />
     </nav>
   </div>
 </header>

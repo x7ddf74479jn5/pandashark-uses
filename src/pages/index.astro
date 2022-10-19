@@ -8,6 +8,7 @@ import { SITE_TITLE, SITE_DESCRIPTION, HOMEPAGE_URL } from '../config'
 import { IoArrowForward } from 'react-icons/io5'
 import Masthead from '../components/Masthead.astro'
 import { Image } from '@astrojs/image/components'
+import CreatedWtihSection from '../components/CreatedWtihSection.astro'
 
 const posts = (await Astro.glob('./posts/*.md')).sort(
   (a, b) =>
@@ -37,28 +38,29 @@ const posts = (await Astro.glob('./posts/*.md')).sort(
             </a>
           </p>
         </section>
+        <section>
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {
+              posts.map(post => (
+                <li class="text-center mb-4">
+                  <a href={post.url}>
+                    <Image
+                      class="border border-slate-300 dark:border-zinc-700 rounded-xl"
+                      src={post.frontmatter.heroImage}
+                      width={720 * 2}
+                      aspectRatio={2.0}
+                      alt="Thumbnail"
+                    />
+                    <div class="mt-3 text-xl">{post.frontmatter.title}</div>
+                    <div class="opacity-70">{post.frontmatter.description}</div>
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </section>
+        <CreatedWtihSection />
       </Content>
-      <section>
-        <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {
-            posts.map(post => (
-              <li class="text-center mb-4">
-                <a href={post.url}>
-                  <Image
-                    class="border border-slate-300 dark:border-zinc-700 rounded-xl"
-                    src={post.frontmatter.heroImage}
-                    width={720 * 2}
-                    aspectRatio={2.0}
-                    alt="Thumbnail"
-                  />
-                  <div class="mt-3 text-xl">{post.frontmatter.title}</div>
-                  <div class="opacity-70">{post.frontmatter.description}</div>
-                </a>
-              </li>
-            ))
-          }
-        </ul>
-      </section>
     </main>
     <Footer />
   </Body>

@@ -1,5 +1,5 @@
 ---
-description: Coffee Mill
+description: Coffee mill
 public: true
 layout: ../../layouts/BlogPost.astro
 title: Karita Nice Cut Mill

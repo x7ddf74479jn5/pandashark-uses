@@ -1,5 +1,5 @@
 ---
-description: Electrical Kettle
+description: Electrical kettle
 public: true
 layout: ../../layouts/BlogPost.astro
 title: Russell Hobbs Cafe Kettle
@@ -15,4 +15,4 @@ slug: russell-hobbs-cafe-kettle
 
 小さい鍋でパスタを茹でるときも重宝する。鍋にパスタをセットした後に上の部分からお湯を注ぐことですぐにパスタが柔らかくなるため、加熱ムラが生まれない。
 
-使っていくうちに底に白斑が出てくるが、水道水中のカルキ成分が析出したもの。クエン酸水（レモン汁でも）を沸かせば中和反応で消える。
+使っていくうち底に白斑が出てくるが、水道水中のカルキ成分が析出したもの。クエン酸水（レモン汁でも）を沸かせば中和反応で消える。

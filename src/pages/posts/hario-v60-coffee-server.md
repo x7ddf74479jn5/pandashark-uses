@@ -1,5 +1,5 @@
 ---
-description: Coffee Server
+description: Coffee server
 public: true
 layout: ../../layouts/BlogPost.astro
 title: HARIO V60 Coffee Server

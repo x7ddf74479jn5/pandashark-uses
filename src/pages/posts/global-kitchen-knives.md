@@ -1,5 +1,5 @@
 ---
-description: Kitchen Knife
+description: Kitchen knife
 public: true
 layout: ../../layouts/BlogPost.astro
 title: GLOBAL Kitchen Knives

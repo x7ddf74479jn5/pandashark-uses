@@ -1,5 +1,5 @@
 ---
-description: Coffee Dripper
+description: Coffee dripper
 public: true
 layout: ../../layouts/BlogPost.astro
 title: HARIO V60 Coffee Dripper

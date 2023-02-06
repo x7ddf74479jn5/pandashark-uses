@@ -9,11 +9,10 @@ import { IoArrowForward } from 'react-icons/io5/index.js'
 import Masthead from '../components/Masthead.astro'
 import { Image } from '@astrojs/image/components'
 import CreatedWtihSection from '../components/CreatedWtihSection.astro'
+import { getCollection } from 'astro:content'
 
-const posts = (await Astro.glob('./posts/*.md')).sort(
-  (a, b) =>
-    new Date(b.frontmatter.createdAt).valueOf() -
-    new Date(a.frontmatter.createdAt).valueOf()
+const posts = (await getCollection('posts')).sort(
+  (a, b) => b.data.createdAt.valueOf() - a.data.createdAt.valueOf()
 )
 ---
 
@@ -43,16 +42,16 @@ const posts = (await Astro.glob('./posts/*.md')).sort(
             {
               posts.map(post => (
                 <li class="text-center mb-4">
-                  <a href={post.url}>
+                  <a href={`/posts/${post.slug}`}>
                     <Image
                       class="border border-slate-300 dark:border-zinc-700 rounded-xl"
-                      src={post.frontmatter.heroImage}
+                      src={post.data.heroImage}
                       width={720 * 2}
                       aspectRatio={2.0}
                       alt="Thumbnail"
                     />
-                    <div class="mt-3 text-xl">{post.frontmatter.title}</div>
-                    <div class="opacity-70">{post.frontmatter.description}</div>
+                    <div class="mt-3 text-xl">{post.data.title}</div>
+                    <div class="opacity-70">{post.data.description}</div>
                   </a>
                 </li>
               ))

@@ -10,10 +10,15 @@ import Masthead from '../components/Masthead.astro'
 import { Image } from '@astrojs/image/components'
 import CreatedWtihSection from '../components/CreatedWtihSection.astro'
 import { getCollection } from 'astro:content'
+import { saveSearchIndex } from '../lib/meilisearch'
 
 const posts = (await getCollection('posts')).sort(
   (a, b) => b.data.createdAt.valueOf() - a.data.createdAt.valueOf()
 )
+
+if (import.meta.env.PROD) {
+  saveSearchIndex(posts)
+}
 ---
 
 <!DOCTYPE html>

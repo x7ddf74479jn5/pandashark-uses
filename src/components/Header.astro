@@ -5,6 +5,7 @@ import { IoLogoGithub } from 'react-icons/io5/index.js'
 import { SharkFinIcon } from './icons/SharkFinIcon'
 import { ThemeToggle } from './ThemeToggleButton'
 import { DropdownMenu } from './DropdownMenu'
+import { SearchForm } from './SearchForm'
 ---
 
 <header class="fixed z-20 w-full p-2 backdrop-blur-md">
@@ -21,10 +22,13 @@ import { DropdownMenu } from './DropdownMenu'
         <HeaderLink href={HOMEPAGE_URL}>About</HeaderLink>
         <HeaderLink
           href="https://github.com/x7ddf74479jn5/pandashark-uses"
-          target="_blank"><IoLogoGithub />Source</HeaderLink
+          target="_blank"
         >
+          <IoLogoGithub />Source
+        </HeaderLink>
       </div>
       <div class="flex-1"></div>
+      <SearchForm client:visible />
       <ThemeToggle client:visible />
       <DropdownMenu client:visible />
     </nav>

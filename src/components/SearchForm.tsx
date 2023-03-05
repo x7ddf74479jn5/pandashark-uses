@@ -1,7 +1,7 @@
 import React, { useState, Fragment, useCallback } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { Search } from './Search'
-import { IoSearch } from 'react-icons/io5'
+import { IoSearch } from 'react-icons/io5/index.js'
 
 export const SearchForm = () => {
   const [isOpen, setIsOpen] = useState(false)

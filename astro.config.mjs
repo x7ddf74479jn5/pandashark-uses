@@ -4,6 +4,7 @@ import react from '@astrojs/react'
 import image from '@astrojs/image'
 import tailwind from '@astrojs/tailwind'
 import addClasses from 'rehype-add-classes'
+import partytown from '@astrojs/partytown'
 
 // https://astro.build/config
 export default defineConfig({
@@ -12,7 +13,12 @@ export default defineConfig({
     sitemap(),
     react(),
     image({ serviceEntryPoint: '@astrojs/image/sharp' }),
-    tailwind()
+    tailwind(),
+    partytown({
+      config: {
+        forward: ['dataLayer.push']
+      }
+    })
   ],
   markdown: {
     rehypePlugins: [

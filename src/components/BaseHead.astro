@@ -54,3 +54,15 @@ const { title, description, image = '/cover.webp' } = Astro.props
     document.documentElement.classList.add('dark')
   }
 </script>
+<script
+  type="text/partytown"
+  src="https://www.googletagmanager.com/gtag/js?id=G-LMJEYTQW9M"
+></script>
+<script type="text/partytown">
+  window.dataLayer = window.dataLayer || []
+  function gtag() {
+    dataLayer.push(arguments)
+  }
+  gtag('js', new Date())
+  gtag('config', 'GA_MEASUREMENT_ID')
+</script>
